@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323391A315D700E20063E3CA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323391A215D700E20063E3CA /* Accounts.framework */; };
+		323391AA15D702D10063E3CA /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323391A915D702D10063E3CA /* Twitter.framework */; };
 		32490F0D15D6F415005C8FD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32490F0C15D6F415005C8FD9 /* UIKit.framework */; };
 		32490F0F15D6F415005C8FD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32490F0E15D6F415005C8FD9 /* Foundation.framework */; };
 		32490F1115D6F415005C8FD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32490F1015D6F415005C8FD9 /* CoreGraphics.framework */; };
@@ -18,7 +20,7 @@
 		32490F2615D6F415005C8FD9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490F2515D6F415005C8FD9 /* FirstViewController.m */; };
 		32490F2815D6F415005C8FD9 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 32490F2715D6F415005C8FD9 /* first.png */; };
 		32490F2A15D6F415005C8FD9 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32490F2915D6F415005C8FD9 /* first@2x.png */; };
-		32490F2D15D6F415005C8FD9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490F2C15D6F415005C8FD9 /* SecondViewController.m */; };
+		32490F2D15D6F415005C8FD9 /* EditUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490F2C15D6F415005C8FD9 /* EditUserViewController.m */; };
 		32490F2F15D6F415005C8FD9 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 32490F2E15D6F415005C8FD9 /* second.png */; };
 		32490F3115D6F415005C8FD9 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32490F3015D6F415005C8FD9 /* second@2x.png */; };
 		32490F3915D6F415005C8FD9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32490F3815D6F415005C8FD9 /* SenTestingKit.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323391A215D700E20063E3CA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		323391A915D702D10063E3CA /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		32490F0815D6F415005C8FD9 /* Loop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32490F0C15D6F415005C8FD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32490F0E15D6F415005C8FD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,8 +59,8 @@
 		32490F2515D6F415005C8FD9 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		32490F2715D6F415005C8FD9 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		32490F2915D6F415005C8FD9 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		32490F2B15D6F415005C8FD9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		32490F2C15D6F415005C8FD9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		32490F2B15D6F415005C8FD9 /* EditUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditUserViewController.h; sourceTree = "<group>"; };
+		32490F2C15D6F415005C8FD9 /* EditUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditUserViewController.m; sourceTree = "<group>"; };
 		32490F2E15D6F415005C8FD9 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		32490F3015D6F415005C8FD9 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		32490F3715D6F415005C8FD9 /* LoopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323391AA15D702D10063E3CA /* Twitter.framework in Frameworks */,
+				323391A315D700E20063E3CA /* Accounts.framework in Frameworks */,
 				32490F0D15D6F415005C8FD9 /* UIKit.framework in Frameworks */,
 				32490F0F15D6F415005C8FD9 /* Foundation.framework in Frameworks */,
 				32490F1115D6F415005C8FD9 /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +119,8 @@
 		32490F0B15D6F415005C8FD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				323391A915D702D10063E3CA /* Twitter.framework */,
+				323391A215D700E20063E3CA /* Accounts.framework */,
 				32490F0C15D6F415005C8FD9 /* UIKit.framework */,
 				32490F0E15D6F415005C8FD9 /* Foundation.framework */,
 				32490F1015D6F415005C8FD9 /* CoreGraphics.framework */,
@@ -132,8 +140,8 @@
 				32490F2515D6F415005C8FD9 /* FirstViewController.m */,
 				32490F2715D6F415005C8FD9 /* first.png */,
 				32490F2915D6F415005C8FD9 /* first@2x.png */,
-				32490F2B15D6F415005C8FD9 /* SecondViewController.h */,
-				32490F2C15D6F415005C8FD9 /* SecondViewController.m */,
+				32490F2B15D6F415005C8FD9 /* EditUserViewController.h */,
+				32490F2C15D6F415005C8FD9 /* EditUserViewController.m */,
 				32490F2E15D6F415005C8FD9 /* second.png */,
 				32490F3015D6F415005C8FD9 /* second@2x.png */,
 				32490F1315D6F415005C8FD9 /* Supporting Files */,
@@ -286,7 +294,7 @@
 				32490F1915D6F415005C8FD9 /* main.m in Sources */,
 				32490F1D15D6F415005C8FD9 /* AppDelegate.m in Sources */,
 				32490F2615D6F415005C8FD9 /* FirstViewController.m in Sources */,
-				32490F2D15D6F415005C8FD9 /* SecondViewController.m in Sources */,
+				32490F2D15D6F415005C8FD9 /* EditUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +476,7 @@
 				32490F4B15D6F415005C8FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32490F4C15D6F415005C8FD9 /* Build configuration list for PBXNativeTarget "LoopTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +485,7 @@
 				32490F4E15D6F415005C8FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
