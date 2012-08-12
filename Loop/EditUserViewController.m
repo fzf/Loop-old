@@ -126,6 +126,7 @@
     NSString *user_id = [defaults objectForKey:@"user_id"];
 
 	NSLog(@"twitter id: %@", self.twitterId);
+	NSLog(@"user id: %@", user_id);
     NSDictionary *jsonDictionary =  @{
         @"user" :
         @{
@@ -136,9 +137,11 @@
             @"phone"      : self.phoneField.text,
             @"uid"        : self.twitterId,
             @"twitter_handle": self.twitterHandleLabel.text,
-            @"id"         : user_id
         }
     };
+	if (user_id != nil) {
+		[[jsonDictionary objectForKey:@"user"] setObject:user_id forKey:@"id"];
+	}
     NSError* error;
 
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:jsonDictionary options:kNilOptions error:&error];
