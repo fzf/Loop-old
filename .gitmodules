@@ -1,0 +1,3 @@
+[submodule "Frameworks/SMWebRequest"]
+	path = Frameworks/SMWebRequest
+	url = https://github.com/nfarina/webrequest.git

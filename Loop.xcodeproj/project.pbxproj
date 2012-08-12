@@ -28,6 +28,7 @@
 		32490F3B15D6F415005C8FD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32490F0E15D6F415005C8FD9 /* Foundation.framework */; };
 		32490F4315D6F415005C8FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32490F4115D6F415005C8FD9 /* InfoPlist.strings */; };
 		32490F4615D6F415005C8FD9 /* LoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490F4515D6F415005C8FD9 /* LoopTests.m */; };
+		32A7FB2A15D7231400EF53E4 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A7FB2815D7231400EF53E4 /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		32490F4215D6F415005C8FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32490F4415D6F415005C8FD9 /* LoopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopTests.h; sourceTree = "<group>"; };
 		32490F4515D6F415005C8FD9 /* LoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTests.m; sourceTree = "<group>"; };
+		32A7FB2815D7231400EF53E4 /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMWebRequest.m; path = Frameworks/SMWebRequest/SMWebRequest.m; sourceTree = "<group>"; };
+		32A7FB2915D7231400EF53E4 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMWebRequest.h; path = Frameworks/SMWebRequest/SMWebRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 		32490F0B15D6F415005C8FD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32A7FB2815D7231400EF53E4 /* SMWebRequest.m */,
+				32A7FB2915D7231400EF53E4 /* SMWebRequest.h */,
 				323391A915D702D10063E3CA /* Twitter.framework */,
 				323391A215D700E20063E3CA /* Accounts.framework */,
 				32490F0C15D6F415005C8FD9 /* UIKit.framework */,
@@ -295,6 +300,7 @@
 				32490F1D15D6F415005C8FD9 /* AppDelegate.m in Sources */,
 				32490F2615D6F415005C8FD9 /* FirstViewController.m in Sources */,
 				32490F2D15D6F415005C8FD9 /* EditUserViewController.m in Sources */,
+				32A7FB2A15D7231400EF53E4 /* SMWebRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
