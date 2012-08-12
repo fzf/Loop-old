@@ -34,7 +34,6 @@
         self.twitterId = [defaults objectForKey:@"uid"];
         
     }
-
     accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [accountStore requestAccessToAccountsWithType:accountType options:nil completion:^(BOOL granted, NSError *error)
@@ -56,7 +55,7 @@
              [req performRequestWithHandler:^(NSData *responseData,
                                               NSHTTPURLResponse *urlResponse,
                                               NSError *error) {
-                 
+   
                  // If there was an error making the request, display a message to the user
                  if(error != nil) {
                      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Twitter Error"
@@ -85,21 +84,21 @@
                      return;
                  }
 
+
                  NSLog(@"%@", [resp description]);
                  NSString *handle     = [resp objectForKey:@"screen_name"];
                  NSString *fullName   = [resp objectForKey:@"name"];
                  NSArray *splitName   = [fullName componentsSeparatedByString:@" "];
                  
-                 
-                 _firstNameField.text = [splitName objectAtIndex:0];
-                 _lastNameField.text  = [splitName objectAtIndex:1];
-                 _twitterId           = [resp objectForKey:@"id"];
-                 _twitterHandleLabel.text = (@"\@%@", handle);
-                 
-                 
                  // Make sure to perform our operation back on the main thread
                  dispatch_async(dispatch_get_main_queue(), ^{
                      // Do something with the fetched data
+					 _firstNameField.text = [splitName objectAtIndex:0];
+					 if (splitName.count > 1) {
+						 _lastNameField.text  = [splitName objectAtIndex:1];
+					 }
+					 _twitterId           = [resp objectForKey:@"id"];
+					 _twitterHandleLabel.text = (@"\@%@", handle);
                  });
              }];
 
@@ -126,6 +125,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *user_id = [defaults objectForKey:@"user_id"];
 
+	NSLog(@"twitter id: %@", self.twitterId);
     NSDictionary *jsonDictionary =  @{
         @"user" :
         @{
